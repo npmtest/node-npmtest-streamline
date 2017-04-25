@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-streamline/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-streamline/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-streamline/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-streamline/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-streamline/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-streamline/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-streamline/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-streamline/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-streamline/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-streamline/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-streamline/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-streamline/build/coverage.html/index.html)
 
@@ -35,48 +35,99 @@
 ```json
 
 {
-    "name": "streamline",
-    "description": "Asynchronous Javascript for dummies",
-    "version": "2.0.19",
-    "license": "MIT",
-    "homepage": "http://github.com/Sage/streamlinejs",
-    "author": "Bruno Jouhier",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/Sage/streamlinejs.git"
+    "author": {
+        "name": "Bruno Jouhier"
     },
-    "engines": {
-        "node": ">=0.10.0"
+    "bin": {
+        "_node": "./bin/_node",
+        "_coffee": "./bin/_coffee"
     },
+    "bugs": {
+        "url": "https://github.com/Sage/streamlinejs/issues"
+    },
+    "contributors": [
+        {
+            "name": "Bruno Jouhier"
+        },
+        {
+            "name": "Preston Guillory"
+        },
+        {
+            "name": "Will Conant"
+        },
+        {
+            "name": "Aseem Kishore"
+        },
+        {
+            "name": "Daniel Ennis"
+        },
+        {
+            "name": "Marcel Laverdet",
+            "url": "https://github.com/laverdet/"
+        },
+        {
+            "name": "Evan Worley"
+        },
+        {
+            "name": "anodos",
+            "url": "https://github.com/anodos"
+        },
+        {
+            "name": "Alan Gutierrez"
+        },
+        {
+            "name": "Geoffry Song"
+        }
+    ],
     "dependencies": {
         "babel-core": "^6.3.26",
         "babel-plugin-streamline": "^2.0.19",
         "babel-preset-es2015": "^6.3.13",
         "colors": "^1.1.2",
         "commander": "^2.8.1",
-        "source-map-support": "git+https://github.com/Sage/node-source-map-support#catch-missing-sourcemap-element",
+        "fibers": "^1.0.6",
+        "source-map-support": "git+https://github.com/Sage/node-source-map-support.git#catch-missing-sourcemap-element",
         "streamline-runtime": "^1.0.17",
         "typescript": "^2.0.0"
     },
-    "optionalDependencies": {
-        "fibers": "^1.0.6"
-    },
+    "description": "Asynchronous Javascript for dummies",
     "devDependencies": {
         "babelify": "^7.2.0",
         "browserify": "^12.0.1",
         "qunit": "git+https://github.com/Sage/node-qunit.git#sage",
         "uglifyify": "^3.0.4"
     },
-    "bin": {
-        "_node": "./bin/_node",
-        "_coffee": "./bin/_coffee"
+    "directories": {},
+    "dist": {
+        "shasum": "04af53dce2fd28b105b9a71e5b3c8867379d8f75",
+        "tarball": "https://registry.npmjs.org/streamline/-/streamline-2.0.19.tgz"
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "gitHead": "cc795af21cc37990b91f6553d33ef33e5231014f",
+    "homepage": "http://github.com/Sage/streamlinejs",
+    "license": "MIT",
+    "main": "index.js",
+    "maintainers": [
+        {
+            "name": "bjouhier"
+        }
+    ],
+    "name": "streamline",
+    "optionalDependencies": {
+        "fibers": "^1.0.6"
     },
     "preferGlobal": true,
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Sage/streamlinejs.git"
+    },
     "scripts": {
         "prepublish": "node build.js || nodejs build.js",
         "test": "node test"
     },
-    "main": "index.js"
+    "version": "2.0.19"
 }
 ```
 
